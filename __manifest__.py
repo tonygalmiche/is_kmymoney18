@@ -24,6 +24,12 @@ InfoSaône - Module Odoo 18 Module Odoo kMyMoney
         'report/solde_par_operation_report.xml',
         'views/menu.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            'is_kmymoney18/static/src/css/style.css',
+            # 'is_kmymoney18/static/src/js/graph_no_legend.js',
+        ],
+    },
     'installable': True,
     'application': True,
     'license': 'LGPL-3',

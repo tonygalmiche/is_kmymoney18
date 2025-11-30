@@ -73,7 +73,7 @@
         <field name="name">kmn_solde_par_operation_report_graph</field>
        <field name="model">kmn.solde.par.operation.report</field>
         <field name="arch" type="xml">
-            <graph>
+            <graph class="o_graph_no_legend o_graph_load_all">
                 <field name="post_date"  type="col" interval="year"/>
                 <field name="account_id" type="row"/>
                 <field name="solde"      type="measure"/>

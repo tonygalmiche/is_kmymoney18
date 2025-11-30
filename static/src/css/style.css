@@ -1,2 +1,35 @@
+/* Réduction de la hauteur des lignes dans les vues listes */
+.o_list_renderer .o_list_table tbody tr td {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
 
+.o_list_renderer .o_list_table thead tr th {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+/* Réduction de la hauteur des inputs dans les listes éditables */
+.o_list_renderer .o_list_table tbody tr td .o_field_widget input {
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+    min-height: unset !important;
+}
+
+/* Ajustement des boutons dans les listes */
+.o_list_renderer .o_list_table tbody tr td button {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Masquer la légende dans les graphiques avec la classe o_graph_no_legend */
+/* Note: La légende est maintenant masquée via JavaScript (graph_no_legend.js) */
+
+/* Masquer le message d'alerte "trop de données" dans les graphiques avec o_graph_load_all */
+/* Note: Le message est maintenant évité via JavaScript en forçant le chargement de toutes les données */
+/*
+.o_graph_load_all .o_graph_alert {
+    display: none !important;
+}
+    */
 
